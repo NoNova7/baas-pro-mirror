@@ -568,5 +568,48 @@
                 11
             ]
         }
+    },
+    "cn_activity" : {
+        "base" : {
+            "enable" : false,
+            "end" : "",
+            "index" : 300,
+            "interval" : 3600,
+            "link_task" : "",
+            "next" : "2023-11-17 00:00:00",
+            "text" : "国服活动-夏日天空的愿望清单"
+        },
+        "scan" : {
+            "enable" : true,
+            "stage" : [
+            ]
+        },
+        "story_exp" : {
+            "enable" : true
+        },
+        "task_exp" : {
+            "enable" : true
+        },
+        "bonus" : {
+            "enable" : true,
+            "bonus1" : [
+                9,
+                10,
+                11,
+                12
+            ],
+            "bonus2" : [
+                9,
+                12
+            ],
+            "bonus3" : [
+                10,
+                12
+            ],
+            "bonus4" : [
+                11,
+                12
+            ]
+        }
     }
 }
