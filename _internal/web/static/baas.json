@@ -468,7 +468,7 @@
             "enable" : false
         }
     },
-    "jp_bydygx" : {
+    "jp_activity" : {
         "base" : {
             "enable" : false,
             "index" : 300,
@@ -476,7 +476,7 @@
             "end" : "",
             "interval" : 3600,
             "link_task" : "",
-            "text" : "日服活动-白亚的预告信"
+            "text" : "日服活动-Say Bing!"
         },
         "story_exp" : {
             "enable" : true
