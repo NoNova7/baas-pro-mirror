@@ -586,6 +586,9 @@
                 11,
                 12
             ]
+        },
+        "exchange": {
+            "enable" : true
         }
     },
     "god_cross" : {
