@@ -590,5 +590,25 @@
         "exchange": {
             "enable" : true
         }
+    },
+    "tactics_test" : {
+        "base" : {
+            "enable" : false,
+            "index" : 120,
+            "next" : "2023-11-17 00:00:00",
+            "end" : "",
+            "interval" : 0,
+            "link_task" : "",
+            "text" : "战术测试"
+        },
+        "exp" : {
+            "enable" : true,
+            "auto" : true,
+            "help" : true,
+            "stage" : "222"
+        },
+        "scan" : {
+            "enable" : true
+        }
     }
 }
