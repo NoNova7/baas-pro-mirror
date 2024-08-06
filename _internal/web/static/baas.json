@@ -589,6 +589,9 @@
         },
         "exchange": {
             "enable" : true
+        },
+        "dice": {
+            "enable" : true
         }
     },
     "tactics_test" : {
