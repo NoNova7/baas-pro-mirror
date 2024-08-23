@@ -613,5 +613,28 @@
         "scan" : {
             "enable" : true
         }
+    },
+    "god_cross" : {
+        "base" : {
+            "enable" : false,
+            "end" : "",
+            "index" : 300,
+            "interval" : 3600,
+            "link_task" : "",
+            "next" : "2023-11-17 00:00:00",
+            "text" : "国服活动-神名十字"
+        },
+        "scan" : {
+            "enable" : true,
+            "stage" : [
+                "10-1"
+            ]
+        },
+        "story_exp" : {
+            "enable" : true
+        },
+        "task_exp" : {
+            "enable" : true
+        }
     }
 }
