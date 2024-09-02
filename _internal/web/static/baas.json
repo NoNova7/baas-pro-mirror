@@ -466,6 +466,9 @@
         },
         "help" : {
             "enable" : false
+        },
+        "force" : {
+            "mode" : 2
         }
     },
     "jp_activity" : {
