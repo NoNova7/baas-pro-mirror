@@ -3870,6 +3870,27 @@
             "type" : "sel"
         },
         "base.text" : "skip",
+        "exchange" : {
+            "name" : "兑换奖励"
+        },
+        "exchange.enable" : {
+            "name" : "启用该功能",
+            "type" : "bool"
+        },
+        "draw_card" : {
+            "name" : "洗牌抽卡 (抽第一张，然后立即洗牌)"
+        },
+        "draw_card.enable" : {
+            "name" : "启用该功能",
+            "type" : "bool"
+        },
+        "dice" : {
+            "name" : "掷骰子兑换奖励"
+        },
+        "dice.enable" : {
+            "name" : "启用该功能",
+            "type" : "bool"
+        },
         "story_exp" : {
             "name" : "故事开图"
         },
@@ -3914,20 +3935,6 @@
             "desc" : "一行一个配置。格式是: 关卡-次数</br>例如:第9关打1次,第10关打2次,第12关最大次数，填写如下：<br/>9-1</br>10-2</br>12-max",
             "name" : "扫荡关卡",
             "type" : "arr"
-        },
-        "exchange" : {
-            "name" : "兑换奖励"
-        },
-        "exchange.enable" : {
-            "name" : "启用该功能",
-            "type" : "bool"
-        },
-        "dice" : {
-            "name" : "掷骰子兑换奖励"
-        },
-        "dice.enable" : {
-            "name" : "启用该功能",
-            "type" : "bool"
         },
         "bonus" : {
             "name" : "加成设置 根据每次活动加成设置每个物品要刷的关卡，比如：物品1是排球，要刷的加成有9，10关，就在加成物品1里面填写9和10"
