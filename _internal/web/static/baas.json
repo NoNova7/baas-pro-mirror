@@ -569,6 +569,10 @@
         "task_exp" : {
             "enable" : true
         },
+        "special" : {
+            "stage" : 8,
+            "fight" : false
+        },
         "challenge_exp" : {
             "enable" : true
         },
