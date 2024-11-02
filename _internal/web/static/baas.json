@@ -426,6 +426,26 @@
             "easy_mode" : false
         }
     },
+    "challenge_normal_task" : {
+        "base" : {
+            "enable" : false,
+            "index" : -99,
+            "next" : "2023-11-17 00:00:00",
+            "end" : "",
+            "interval" : 9999999,
+            "link_task" : "work_task",
+            "text" : "普通关卡-挑战"
+        },
+        "config" : {
+            "stage" : [
+                "6-2",
+                "6-3",
+                "7-1"
+            ],
+            "before" : 1.5,
+            "easy_mode" : false
+        }
+    },
     "challenge_hard_task" : {
         "base" : {
             "enable" : false,

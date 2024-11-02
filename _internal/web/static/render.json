@@ -1679,7 +1679,7 @@
         },
         "config.easy_mode" : {
             "name" : "简易模式（日服/国际服）",
-            "desc" : "仅限日服/国际服生效！简易模式可以配置彩虹队到一队即可",
+            "desc" : "简易模式可以配置彩虹队到一队即可",
             "type" : "bool"
         },
         "config.before" : {
@@ -1832,7 +1832,145 @@
         },
         "config.easy_mode" : {
             "name" : "简易模式（日服/国际服）",
-            "desc" : "仅限日服/国际服生效！简易模式可以配置彩虹队到一队即可",
+            "desc" : "简易模式可以配置彩虹队到一队即可",
+            "type" : "bool"
+        },
+        "config.before" : {
+            "name" : "每回合行动后等待时间，填写范围0-5",
+            "desc" : "数字越大越不容易卡识别，执行效率越慢。<br/>数字越小越容易卡识别，执行效率越高。<br/>推荐电脑高配置填1，一般配置填2，低配置填3"
+        }
+    },
+    "challenge_normal_task" : {
+        "base" : {
+            "name" : "功能设置"
+        },
+        "base.enable" : {
+            "desc" : "将这个任务加入调度器",
+            "name" : "启用该功能",
+            "type" : "bool"
+        },
+        "base.index" : {
+            "desc" : "数字越低，越先执行",
+            "name" : "任务优先级",
+            "type" : "num"
+        },
+        "base.next" : {
+            "desc" : "自动计算的数值，不需要手动修改。清空后将立即运行。格式：2023-11-17 00:00:00",
+            "name" : "下一次运行时间",
+            "type" : "txt"
+        },
+        "base.end" : {
+            "desc" : "超出该时间的任务不会执行。不填则永不停止。格式：2023-11-17 00:00:00",
+            "name" : "任务截止时间",
+            "type" : "txt"
+        },
+        "base.interval" : {
+            "desc" : "完成任务后，间隔多少秒后重复执行任务，填0：表示明天再执行 填3600：表示1小时候再执行",
+            "name" : "再次执行任务时间",
+            "type" : "num"
+        },
+        "base.link_task" : {
+            "desc" : "完成本任务后，立刻执行关联任务",
+            "items" : [
+                {
+                    "name" : "不关联",
+                    "value" : ""
+                },
+                {
+                    "name" : "重启",
+                    "value" : "restart"
+                },
+                {
+                    "name" : "购买体力",
+                    "value" : "buy_ap"
+                },
+                {
+                    "name" : "小组",
+                    "value" : "group"
+                },
+                {
+                    "name" : "补习部签到",
+                    "value" : "tutor_dept"
+                },
+                {
+                    "name" : "制造",
+                    "value" : "make"
+                },
+                {
+                    "name" : "日程",
+                    "value" : "schedule"
+                },
+                {
+                    "name" : "商店购买",
+                    "value" : "shop"
+                },
+                {
+                    "name" : "咖啡厅",
+                    "value" : "cafe"
+                },
+                {
+                    "name" : "战术对抗赛",
+                    "value" : "arena"
+                },
+                {
+                    "name" : "特殊委托",
+                    "value" : "special_entrust"
+                },
+                {
+                    "name" : "通缉悬赏",
+                    "value" : "wanted"
+                },
+                {
+                    "name" : "领取邮箱",
+                    "value" : "mailbox"
+                },
+                {
+                    "name" : "MomoTalk",
+                    "value" : "momo_talk"
+                },
+                {
+                    "name" : "工作任务",
+                    "value" : "work_task"
+                },
+                {
+                    "name" : "扫荡普通关卡",
+                    "value" : "normal_task"
+                },
+                {
+                    "name" : "扫荡困难关卡",
+                    "value" : "hard_task"
+                },
+                {
+                    "name" : "国服活动-通用活动",
+                    "value" : "cn_activity"
+                },{
+                    "name" : "国服活动-神名十字",
+                    "value" : "god_cross"
+                },
+                {
+                    "name" : "日服活动-通用活动",
+                    "value" : "jp_activity"
+                },
+                {
+                    "name" : "国际服活动-通用活动",
+                    "value" : "intl_activity"
+                }
+            ],
+            "name" : "关联任务",
+            "type" : "sel"
+        },
+        "base.text" : "skip",
+        "config" : {
+            "name" : "关卡设置"
+        },
+        "config.stage" : {
+            "name" : "区域-关卡",
+            "type" : "arr",
+            "desc" : " <style>table td { width: 233px; }</style>一行一个例如第5章第一关和第6章第二关:<br/>5-1</br>6-2<table><tr><td colspan='3'>每个区域章节要求的阵容不同，根据情况选择多个区域开图或补⭐</td></tr><tr><td colspan='3' style='color:red;font-weight: bold;'>主力队必须1号队，副队队必须2号队，副副对必须3号队</td></tr><tr><td>1图 1队:爆发</td><td>2图 1队:爆发</td><td>3图 1队:爆贯</td></tr><tr><td>4图 1队:贯穿</td><td>5图 1队:爆发</td><td>6图 1队:贯穿 2队:贯穿</td></tr><tr><td>7图 1队:爆发 2队:爆发</td><td>8图 1队:贯穿 2队:贯穿</td><td>9图 1队:爆发 2队:贯穿</td></tr><tr><td>10图 1队:爆发 2队:神秘</td><td>11图 1队:贯穿 2队:神秘</td><td>12图 1队:神秘 2队:爆发</td></tr><tr><td>13图 1队:贯穿 2队:贯穿</td><td>14图 1队:爆发 2队:神秘</td><td>15图 1队:神秘 2队:神秘</td></tr><tr><td>16图 1队:贯穿 2队:神秘</td><td>17图 1队:爆发 2队:贯穿</td><td>18图 1队:神秘 2队:爆发</td></tr><tr><td>19图 1队:贯穿 2队:神秘</td><td>20图 1队:爆发 2队:贯穿</td><td>21图 1队:神秘 2队:爆发</td></tr><tr><td>22图 1队:贯穿 2队:神秘</td><td>23图 1队:爆发 2队:贯穿</td><td>24图 1队:振动 2队:爆发</td></tr><tr><td>25图 1队:振动 2队:贯穿</td><td>26图 1队:神秘 2队:爆发</td><td>27图 1队:贯穿 2队:爆发</td></tr></table>"
+        },
+        "config.easy_mode" : {
+            "name" : "简易模式（日服/国际服）",
+            "desc" : "简易模式可以配置彩虹队到一队即可",
             "type" : "bool"
         },
         "config.before" : {
@@ -1964,13 +2102,13 @@
             "name" : "关卡设置"
         },
         "config.stage" : {
-            "desc" : "<style>table td { width: 233px;}</style><table><tr><td colspan='3'>每个区域章节要求的阵容不同，根据情况选择多个区域开图或补⭐</td></tr><tr><td colspan='3' style='color:red;font-weight: bold;'>主力队必须1号队，副队队必须2号队，副副对必须3号队\uFE0F</td></tr><tr><td>1图 1队:爆发</td><td>2图 1队:爆发</td><td>3图 1队:爆贯</td></tr><tr><td>4图 1队:贯穿 2队:贯穿</td><td>5图 1队:爆发 2队:爆发</td><td>6图 1队:贯穿 2队:贯穿</td></tr><tr><td>7图 1队:爆发 2队:爆发</td><td>8图 1队:贯穿 2队:贯穿</td><td>9图 1队:爆发 2队:贯穿</td></tr><tr><td>10图 1队:爆发 2队:神秘</td><td>11图 1队:贯穿 2队:神秘</td><td>12图 1队:神秘 2队:爆发</td></tr><tr><td>13图 1队:贯穿 2队:贯穿</td><td>14图 1队:爆发 2队:神秘</td><td>15图 1队:神秘 2队:神秘 3队:贯穿</td></tr><tr><td>16图 1队:贯穿 2队:神秘 3队:贯穿</td><td>17图 1队:爆发 2队:贯穿 3队:爆发</td><td>18图 1队:神秘 2队:爆发 3队:神秘</td></tr><tr><td>19图 1队:贯穿 2队:神秘 3队:贯穿</td><td>20图 1队:爆发 2队:贯穿 3队:爆发</td><td>21图 1队:神秘 2队:爆发 3队:神秘</td></tr><tr><td>22图 1队:贯穿 2队:神秘 3队:贯穿</td><td>23图 1队:爆发 2队:贯穿 3队:爆发</td><td>24图 1队:振动 2队:爆发 3队:振动</td></tr><tr><td>25图 1队:振动 2队:贯穿 3队:神秘</td><td>26图 1队:神秘 2队:爆发 3队:神秘</td><td>27图 1队:贯穿 2队:爆发 3队:贯穿</td></tr></table>",
+            "desc" : "<style>table td { width: 233px;}</style>一行一个例如第5章第一关和第6章第二关:<br/>5-1</br>6-2<table><tr><td colspan='3'>每个区域章节要求的阵容不同，根据情况选择多个区域开图或补⭐</td></tr><tr><td colspan='3' style='color:red;font-weight: bold;'>主力队必须1号队，副队队必须2号队，副副对必须3号队\uFE0F</td></tr><tr><td>1图 1队:爆发</td><td>2图 1队:爆发</td><td>3图 1队:爆贯</td></tr><tr><td>4图 1队:贯穿 2队:贯穿</td><td>5图 1队:爆发 2队:爆发</td><td>6图 1队:贯穿 2队:贯穿</td></tr><tr><td>7图 1队:爆发 2队:爆发</td><td>8图 1队:贯穿 2队:贯穿</td><td>9图 1队:爆发 2队:贯穿</td></tr><tr><td>10图 1队:爆发 2队:神秘</td><td>11图 1队:贯穿 2队:神秘</td><td>12图 1队:神秘 2队:爆发</td></tr><tr><td>13图 1队:贯穿 2队:贯穿</td><td>14图 1队:爆发 2队:神秘</td><td>15图 1队:神秘 2队:神秘 3队:贯穿</td></tr><tr><td>16图 1队:贯穿 2队:神秘 3队:贯穿</td><td>17图 1队:爆发 2队:贯穿 3队:爆发</td><td>18图 1队:神秘 2队:爆发 3队:神秘</td></tr><tr><td>19图 1队:贯穿 2队:神秘 3队:贯穿</td><td>20图 1队:爆发 2队:贯穿 3队:爆发</td><td>21图 1队:神秘 2队:爆发 3队:神秘</td></tr><tr><td>22图 1队:贯穿 2队:神秘 3队:贯穿</td><td>23图 1队:爆发 2队:贯穿 3队:爆发</td><td>24图 1队:振动 2队:爆发 3队:振动</td></tr><tr><td>25图 1队:振动 2队:贯穿 3队:神秘</td><td>26图 1队:神秘 2队:爆发 3队:神秘</td><td>27图 1队:贯穿 2队:爆发 3队:贯穿</td></tr></table>",
             "name" : "挑战关卡",
             "type" : "arr"
         },
         "config.easy_mode" : {
-            "name" : "简易模式（日服）",
-            "desc" : "仅限日服生效！简易模式可以配置彩虹队到一队即可",
+            "name" : "简易模式（日服/国际服）",
+            "desc" : "简易模式可以配置彩虹队到一队即可",
             "type" : "bool"
         },
         "config.before" : {
