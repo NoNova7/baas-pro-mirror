@@ -3724,7 +3724,7 @@
             "type" : "bool"
         },
         "exp.stage" : {
-            "desc" : "开图难度设置；如果已经开过该难度（可以扫荡）则会跳过。单纯使用auto释放技能开通没有难度的关卡，不含黑科技！ <br/><span style='color:red'>练度不够的小号，不要用此功能！很有可能炸票，后果自负！</span><br/>难度如下：1.NORMAL  2.HARD  3.VERYHARD  4.HARDCORE  5.EXTREME<br/>只需要填写序号，比如开图前4关，填写：1234",
+            "desc" : "开图难度设置；如果已经开过该难度（可以扫荡）则会跳过。单纯使用auto释放技能开通没有难度的关卡，不含黑科技！ <br/><span style='color:red'>练度不够的小号，不要用此功能！很有可能炸票，后果自负！</span><br/>难度如下：1.NORMAL  2.HARD  3.VERYHARD  4.HARDCORE  5.EXTREME 6.INSANE 7.TORMENT<br/>只需要填写序号，比如开图前4关，填写：1234",
             "name" : "开图难度"
         },
         "scan" : {
@@ -3759,6 +3759,10 @@
                 {
                     "name" : "INSANE",
                     "value" : 6
+                },
+                {
+                    "name" : "TORMENT",
+                    "value" : 7
                 }
             ],
             "name" : "选择难度",
