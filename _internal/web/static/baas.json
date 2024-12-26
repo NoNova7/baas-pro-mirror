@@ -4,6 +4,7 @@
             "package" : "com.RoamingStar.BlueArchive",
             "serial" : "127.0.0.1:16384",
             "ss_rate" : 0.1,
+            "debug" : true,
             "error_restart_game" : true
         },
         "close_game" : {
@@ -620,13 +621,13 @@
                 12
             ]
         },
-        "exchange": {
+        "exchange" : {
             "enable" : true
         },
-        "draw_card": {
+        "draw_card" : {
             "enable" : true
         },
-        "dice": {
+        "dice" : {
             "enable" : true
         }
     },
