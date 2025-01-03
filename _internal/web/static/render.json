@@ -713,34 +713,6 @@
                 }
             ],
             "type" : "sel"
-        },
-        "interact" : {
-            "name" : "互动设置"
-        },
-        "interact.interact_type" : {
-            "items" : [
-                {
-                    "name" : "拖动礼物",
-                    "value" : "drag_gift"
-                },
-                {
-                    "name" : "清空家具",
-                    "value" : "clear_furniture"
-                }
-            ],
-            "desc" : "拖动礼物：必须有礼物，摸头过程不会消耗礼物。</br>清空家具：必须预留预设配置，见下方预设配置",
-            "name" : "摸头方式",
-            "type" : "sel"
-        },
-        "interact.blank_preset" : {
-            "desc" : "Baas会使用当前咖啡厅保存到该序号，请确保自己的咖啡厅信息有正确保存到其它配置上，防止丢失",
-            "name" : "预设配置序号(清空家具)",
-            "opts" : {
-                "max" : 5,
-                "min" : 1,
-                "step" : 1
-            },
-            "type" : "num"
         }
     },
     "group" : {

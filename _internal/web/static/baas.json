@@ -110,10 +110,6 @@
         "invite" : {
             "enable" : true,
             "type" : "fav_desc"
-        },
-        "interact" : {
-            "interact_type" : "drag_gift",
-            "blank_preset" : 5
         }
     },
     "schedule" : {
