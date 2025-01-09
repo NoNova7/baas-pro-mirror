@@ -234,7 +234,8 @@
         "config" : {
             "stage" : [
                 "1-1"
-            ]
+            ],
+            "before" : 0.5
         }
     },
     "hard_task" : {
@@ -330,6 +331,7 @@
             "text" : "制造"
         },
         "config" : {
+            "quick" : true,
             "use_acc_ticket" : true,
             "count" : 4,
             "priority" : [
