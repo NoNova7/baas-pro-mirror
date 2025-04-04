@@ -678,5 +678,29 @@
             "next" : "2023-11-17 00:00:00",
             "text" : "活动一览-活动故事"
         }
+    },
+    "cn_jmjh" : {
+        "base" : {
+            "enable" : false,
+            "end" : "",
+            "index" : 300,
+            "interval" : 3600,
+            "link_task" : "",
+            "next" : "2023-11-17 00:00:00",
+            "text" : "国服活动-泳4海之家加盟计划"
+        },
+        "occupy" : {
+            "enable" : true,
+            "stage" : "1"
+        },
+        "occupy_all" : {
+            "enable" : false,
+            "stage" : [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
     }
 }
