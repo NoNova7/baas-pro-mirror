@@ -588,12 +588,6 @@
         "task_exp" : {
             "enable" : true
         },
-        "challenge_exp" : {
-            "enable" : true
-        },
-        "challenge-task" : {
-            "enable" : true
-        },
         "bonus" : {
             "enable" : true,
             "bonus1" : [
